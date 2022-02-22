@@ -18,7 +18,7 @@ void StatsCalculator::init() {
 
 void StatsCalculator::printStatistics() {
     std::cout << std::setw(15) << std::left << "Statistics for " << filename << std::endl;
-    std::cout << std::setw(16) << std::left << "Statistics" << std::setw(15) << std::left << "Value" << std::setw(5) << std::left << "Index" << std::endl;
+    std::cout << std::setw(15) << std::left << "Statistics" << std::setw(15) << std::left << "Value" << std::setw(5) << std::left << "Index" << std::endl;
     std::cout << "========================================" << std::endl;
     std::cout << std::setw(15) << std::left << "Minimum" << std::setw(15) << std::left << *std::min_element(lotsOfRandomNumbers.begin(), lotsOfRandomNumbers.end()) << std::setw(10) << std::left << std::min_element(lotsOfRandomNumbers.begin(),lotsOfRandomNumbers.end()) - lotsOfRandomNumbers.begin() << std::endl;
     std::cout << std::setw(15) << std::left << "Maximum" << std::setw(15) << std::left << *std::max_element(lotsOfRandomNumbers.begin(), lotsOfRandomNumbers.end()) << std::setw(10) << std::left << std::max_element(lotsOfRandomNumbers.begin(),lotsOfRandomNumbers.end()) - lotsOfRandomNumbers.begin() << std::endl;;
